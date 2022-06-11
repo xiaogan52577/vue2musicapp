@@ -1,0 +1,20 @@
+//背景颜色
+$background-color-primary:#DB2C1F;
+$background-color-register:#fff;
+
+// 字体颜色
+$font-color-primary:#fff;
+$font-color-register:#000;
+$font-color-primary2:#DB2C1F;
+
+/*边框颜色*/
+$color-border-primary:#bbb !default;
+$color-border-primary2:opacify(#bbb,0.2) !default;
+$color-border-primary3:#e4e4e4 !default;
+
+@mixin field($width,$height) {
+    width: $width;
+    height: $height;
+    background-color: $font-color-primary;
+    border-radius: $height/2;
+}

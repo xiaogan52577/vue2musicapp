@@ -1,0 +1,10 @@
+#recom-songs {
+  width: 110px;
+  height: 100px;
+}
+
+#recom-songs .image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,88 @@
+@import '@/scss/common.scss';
+
+.songs-detail{
+    .van-nav-bar{
+        z-index: 0;
+   }
+   .top{
+       border-radius: 100px;
+        .van-nav-bar__text{
+            color: $font-color-register;
+        }
+        .van-icon {
+            color: $font-color-register;
+        }
+    }
+    .content{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        img{
+            display: inline-block;
+            width: 110px;
+            height: 120px;
+            border-radius: 5px;
+        }
+        p{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 16px;
+            padding-right: 10px;
+        }
+    }
+    .play-top{
+        margin-top: 5px;
+        height: 30px;
+        border-radius: 5px 5px 0 0;
+        border-top: 1px solid $color-border-primary;
+        .iconfont{
+            font-size: 28px;
+            color: red;
+            vertical-align: middle;
+        }
+    }
+    .songs{
+        width: 100%;
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        .songs-left{
+            
+            .songs-index{
+                display: inline-block;
+                text-align: center;
+                line-height: 40px;
+                width: 28px;
+                height: 40px;
+                vertical-align: top;
+            }
+            .songs-name{
+                display: inline-block;
+                height: 40px;
+                span{
+                    font-size: 14px;
+                }
+                &:nth-child(n){
+                    width: 250px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        .songs-right{
+            padding-right: 20px;
+            .iconfont{
+                font-size: 28px;
+            }
+        }
+    }
+   height: 100%;
+   overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none !important;
+        width: 0;
+        height: 0;
+    }
+}

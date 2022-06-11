@@ -1,0 +1,57 @@
+@import '@/scss/common.scss';
+#recommend .header{
+    background-color: $background-color-primary;
+   .van-nav-bar__title{
+        color: $font-color-primary !important;
+    }
+}
+#recommend {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+        // width: 0;
+        // height: 0;
+        -webkit-overflow-scrolling: touch;
+    }
+    .van-tabs__line{
+        bottom:22px;
+        z-index: 0;
+    }
+    .van-nav-bar {
+        z-index: 0;
+    }
+    .van-hairline--bottom::after{
+        border-bottom-width: 0;
+    }
+    .van-tabs{
+        position: relative;
+        &::after{
+            content: '';
+            width: 100%;
+            height: 150px;
+            background-color: $background-color-primary;
+            position: absolute;
+            top: 44px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    .recommend-song{
+        font-size: 14px;
+        font-weight: 700;
+        padding:  5px ;
+    }
+    .songs{
+        margin-top: 5px;
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
+
+

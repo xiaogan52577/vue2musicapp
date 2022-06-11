@@ -1,0 +1,28 @@
+@import "@/scss/common.scss";
+
+.login{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: $background-color-primary;
+    h1{
+        text-align: center;
+        padding-top: 10px;
+        color: $font-color-primary;
+    }
+    img{
+        display: block;
+        margin: 30px auto;
+    }
+    .login-form{
+        position: absolute;
+        width: 350px;
+        top:50%;
+        left: 50%;
+        transform: translate(-175px,-180px);
+        .van-button {
+           color: $font-color-primary2;
+           font-weight: bold;
+        }
+    }
+}
